@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Search from './components/Search/Search';
+import Home from './pages/Home';
+import Liked from './pages/Liked';
 
-function App() {
+const App = () => {
+
+  const [inputText, setInputText] = useState('');
+
+  let inputHandler = (e) => {
+    var lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+
+      <Navbar />
+
+      <Search
+        type='text'
+        placeholder='Search Here . . .'
+        value={inputText}
+        changeHandler={inputHandler}
+      />
+
+      <Routes>
+        <Route path='/' element={<Home searchBy={inputText} />} />
+        <Route path='/liked' element={<Liked searchBy={inputText} />} />
+      </Routes>
+
+    </>
+
   );
-}
+
+};
 
 export default App;

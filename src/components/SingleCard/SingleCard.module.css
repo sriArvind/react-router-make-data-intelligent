@@ -1,0 +1,11 @@
+.cardStyle {
+    cursor: pointer;
+}
+
+.cardStyle:hover {
+    transform: scale(0.9);
+}
+
+.iconStyle:hover {
+    color: #E83A14;
+}

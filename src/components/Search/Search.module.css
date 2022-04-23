@@ -1,0 +1,13 @@
+.input {
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 450px;
+    border: none;
+    border-left: 6px solid #0E3EDA;
+    border-radius: 0 10px 10px 0;
+    outline: 1px solid #cccccc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}

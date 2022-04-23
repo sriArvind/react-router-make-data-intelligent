@@ -1,0 +1,8 @@
+.linkStyle {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.linkStyle:active {
+    color: #F8B400;
+}
