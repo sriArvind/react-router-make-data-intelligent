@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-router-make-data-intelligent/static/css/main.68d60a97.css",
+    "main.js": "/react-router-make-data-intelligent/static/js/main.8b022d76.js",
+    "index.html": "/react-router-make-data-intelligent/index.html",
+    "main.68d60a97.css.map": "/react-router-make-data-intelligent/static/css/main.68d60a97.css.map",
+    "main.8b022d76.js.map": "/react-router-make-data-intelligent/static/js/main.8b022d76.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68d60a97.css",
+    "static/js/main.8b022d76.js"
+  ]
+}
